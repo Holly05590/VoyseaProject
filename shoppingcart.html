@@ -7,9 +7,9 @@
     <link rel="stylesheet" 
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Document</title>
-  <script type="module" crossorigin src="/VoyseaProject/assets/main-48b406e2.js"></script>
-  <link rel="stylesheet" href="/VoyseaProject/assets/main-e7b122f8.css">
+    <title>訂單明細</title>
+  <script type="module" crossorigin src="/VoyseaProject/assets/main-44b67181.js"></script>
+  <link rel="stylesheet" href="/VoyseaProject/assets/main-01af9f83.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -41,31 +41,144 @@
             我的收藏</a>
         </li>
         <li class="mt-4 mt-lg-0 px-3">
-          <a class="p-12 p-lg-0 text-dark" href="product.html">
+          <a class="p-12 p-lg-0 text-dark" href="shoppingcart.html">
             <i class="bi bi-bag"></i>
-            購物清單</a>
+            我的訂單</a>
         </li>
         <li class="mt-4 mt-lg-0 px-3">
-          <a class="p-12 p-lg-0" href="login.html">
+          <i class="bi bi-person-hearts text-primary"></i>
+          <span class="text-primary">您好，Holly</span>
+<!--      <a class="p-12 p-lg-0" href="login.html">
             <button type="button" class="btn btn-success btn-sm text-white">  
               <i class="bi bi-person-circle"></i>
               登入/註冊
             </button>
           </a>
+ --> 
         </li>
       </ul>
     </div>
 </nav>
 
-    <h5>這是購物車頁面</h5>
-    <h5>這是購物車頁面</h5>
-    <h5>這是購物車頁面</h5>
-    <h5>這是購物車頁面</h5>
-    <h5>這是購物車頁面</h5>
+    <!-- 購物車-->
+    <div class="container">
+        <h2 class="mt-5 text-center">訂單明細</h2>
+        <table class="table cart-table">
+            <thead>
+                <tr>
+                    <th>請勾選行程</th>
+                    <th>商品名稱</th>
+                    <th>日期</th>
+                    <th>人數</th>
+                    <th>金額</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 行程1 -->
+                <tr>
+                    <td>
+                        <input type="checkbox" checked>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="/VoyseaProject/assets/Bangkok-a47b2128.jpg" width="80" height="60" alt="Bangkok">
+                            <span class="ms-3">曼谷自由行</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex">
+                            <input type="date" class="form-control me-2" value="2024-11-12">
+                            <span>~</span>
+                            <input type="date" class="form-control ms-2" value="2024-11-16">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="quantity-controls">
+                            <button class="btn">-</button>
+                            <input type="text text-end" value="1">
+                            <button class="btn">+</button>
+                        </div>
+                    </td>
+                    <td>NT $28,800/人</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
 
-
+    <!--小計-->
+    <div class="container my-5">
+        <div class="row">
+    
+            <!-- Discount Code Section -->
+            <div class="col-md-6">
+                <h5>折扣碼：</h5>
+                <form class="form-inline">
+                    <div class="form-group mb-2">
+                        <input type="text" class="form-control" id="discountCode" placeholder="Discount2024">
+                    </div>
+                
+                </form>
+                <a href="login.html" class="text-muted">查看更多優惠碼</a>
+            </div>
+    
+            <!-- Payment Summary Section -->
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th colspan="1" class="text-end">付款資訊</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>小計</td>
+                            <td class="text-end m-3">NT$28,800</td>
+                        </tr>
+                        <tr>
+                            <td>折扣碼</td>
+                            <td class="text-end  m-3 text-danger">-NT$500</td>
+                        </tr>
+                        <tr>
+                            <td class="text-danger">合計</td>
+                            <td class="text-end m-3">NT$28,300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+        </div>
+    </div>
 
 
     
 </body>
+<footer class="footer">
+    <div class="d-md-flex p-5 justify-content-between">
+        <div>
+            <p class="fs-5 text-white">VoySEA 南洋風情畫有限公司</p>
+            <p class="text-white">110 台北市信義區信義路五段7號</p>
+            <p class="text-white">voysea@gmail.com</p>
+            <p class="text-white">+886 912345678</p>
+            <a href="protect.html" class="text-warning">隱私權保護政策</a>
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+            <div class="text-end">
+                <a href="https://www.facebook.com/?locale=zh_TW"><i class="bi bi-facebook text-white fs-2 ms-2"></i></a>
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram text-white fs-2 ms-2"></i></a>
+                <a href="https://line.me/tw/"><i class="bi bi-line text-white fs-2 ms-2"></i></a>
+            </div>
+            <div class="text-end">
+                <a href=""><img src="/VoyseaProject/assets/icon-visa-3c126174.png" alt="" class="img ms-2"></a>
+                <a href=""><img src="/VoyseaProject/assets/icon-card-d294d6d4.png" alt="" class="img ms-2"></a>
+                <a href=""><img src="/VoyseaProject/assets/icon-jcb-914610dc.png" alt="" class="img ms-2"></a>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex p-2 justify-content-between">
+        <p class="text-white">本網站僅供個人作品使用，不提供商業用途</p>
+        <p class="text-white text-end">Copyright © 2024 oscar.</p>
+    </div>
+    
+</footer>                     
 </html>    
