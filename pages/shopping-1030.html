@@ -115,143 +115,86 @@
                     </div>
                 </div>
 
+        <!--旅客資料-->
+        <div class="container mt-5">
+            <h2 class="text-center">訂購人資料</h2>
+            <form>
+              <!-- 訂購人資料 -->
+              <div class="form-group mt-3">
+                <label for="name">真實姓名</label>
+                <input type="text" class="form-control" id="name" placeholder="請輸入您的真實姓名 (例：王大明)" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="請輸入您的電子郵件地址" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="phone">手機號碼</label>
+                <input type="tel" class="form-control" id="phone" placeholder="請輸入您的手機號碼" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="other-requirements">其它需求</label>
+                <textarea class="form-control" id="other-requirements" placeholder="請輸入您的其它需求"></textarea>
+              </div>
+          
+              <h2 class="text-center mt-4">旅客資料</h2>
+          
+              <!-- 旅客01資料 -->
+              <div class="form-group">
+                <label>旅客01</label>
+                <select class="form-control mb-2">
+                  <option selected>佔床(2人床)</option>
+                  <option>不佔床</option>
+                </select>
+              </div>
+              <div class="form-group mt-3">
+                <label for="traveler-name">中文姓名</label>
+                <input type="text" class="form-control" id="traveler-name" placeholder="請輸入您的中文姓名" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="id-number">身份證字號</label>
+                <input type="text" class="form-control" id="id-number" placeholder="請輸入您的身份證字號" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="birthdate">出生日期(西元)</label>
+                <input type="date" class="form-control" id="birthdate" placeholder="YYYY / MM / DD" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="contact-phone">聯絡電話</label>
+                <input type="tel" class="form-control" id="contact-phone" placeholder="請輸入您的聯絡號碼" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="emergency-contact-name">緊急聯絡人姓名</label>
+                <input type="text" class="form-control" id="emergency-contact-name" placeholder="請輸入緊急聯絡人姓名" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="relationship">緊急聯絡人關係</label>
+                <select class="form-control" id="relationship" required>
+                  <option selected>請選擇關係</option>
+                  <option>家人</option>
+                  <option>朋友</option>
+                  <option>同事</option>
+                </select>
+              </div>
+              <div class="form-group mt-3">
+                <label for="emergency-phone">緊急聯絡人聯絡電話</label>
+                <input type="tel" class="form-control" id="emergency-phone" placeholder="請輸入緊急聯絡人聯絡號碼" required>
+              </div>
+              
+              <!-- 提交按鈕 -->
+            </form>
+        </div>
+        <!--旅客資料END-->
 
-                <!-- <div class="coupon item">
-                    <h5>優惠券</h5>
-                    <br>
-                </div> -->
-                <div class="information item">
-                    <h5>訂購人資料</h5>
-                    <div class="info">
-                        <div class="info-data">
-                            <div class="info-item">真實姓名</div>
-                            <div class="info-box">請輸入您的真實姓名 (例：王大明)</div>
-                        </div>
-                        <div class="info-data">
-                            <div class="info-item">Email</div>
-                            <div class="info-box">請輸入您的電子郵件地址</div>
-                        </div>
-                        <div class="info-data">
-                            <div class="info-item">手機號碼</div>
-                            <div class="info-box">請輸入您的手機號碼</div>
-                        </div>
-                    </div>
-                    <div class="info-memo">
-                        <div class="memo-item">其它需求</div>
-                        <div class="memo-box">請輸入您的其它需求</div>
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-                <div class="member item-1">
-                    <h5>旅客資料</h5>
-                    <br>
-                    <div class="memb-item">
-                        <a>旅客01</a>
-                    </div>
-                    <div class="memb-item">
-                        <a>佔床(2人床)</a>
-                    </div>
-                </div>
-
-
-
-
-                <div class="info-emergency item-2">
-                    <div class="emer-data">
-                        <div class="emer-item">中文姓名</div>
-                        <div class="emer-box">請輸入您的中文姓名</div>
-                    </div>
-                    <div class="emer-data">
-                        <div class="emer-item">身份證字號</div>
-                        <div class="emer-box">請輸入您的身份證字號</div>
-                    </div>
-                    <div class="emer-data">
-                        <div class="emer-item">出生日期(西元)</div>
-                        <div class="emer-box">YYYY / MM / DD </div>
-                    </div>
-                    <div class="emer-data">
-                        <div class="emer-item">聯絡電話</div>
-                        <div class="emer-box">請輸入您的聯絡號碼</div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-                <div class="info-emergency item-2">
-                    <div class="emer-data">
-                        <div class="emer-item">緊急聯絡人姓名</div>
-                        <div class="emer-box">請輸入緊急聯絡人姓名</div>
-                    </div>
-                    <div class="emer-data">
-                        <div class="emer-item">緊急聯絡人關係</div>
-                        <div class="emer-box">請選擇關係</div>
-                    </div>
-                    <div class="emer-data">
-                        <div class="emer-item">緊急聯絡人聯絡電話</div>
-                        <div class="emer-box">請輸入緊急聯絡人聯絡號碼</div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- <div class="item item1">流程</div>
-
-            <div class="item item2">
-                <h5>購物清單</h5>
-            </div>
-
-            <div class="item item3">
-                <h5>優惠券 付款資訊</h5>
-            </div>
-
-            <div class="item item4">
-                <h5>訂購人資料</h5>
-            </div>
-
-            <div class="item item5">
-                <h5>旅客資料 旅客01</h5>
-            </div>
-
-            <div class="item item6">
-                <h5>旅客資料 旅客02</h5>
-            </div> -->
-            </div>
+        <div class="btn-1">
+            <button type="button" class="btn btn-success text-white">確認結帳</button>
+        </div>
 
             <!-- <img src="../assets/images/search-Sigapore.png" class="card-img-top rounded" alt="pic1">  -->
             <script type="module" src="../main.js"></script>
 
-            <div class="btn-1">
-                <button type="button" class="btn btn-success text-white">確認結帳</button>
+            
             </div>
-        </div>
         </div>
 </body>
 
